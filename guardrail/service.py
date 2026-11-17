@@ -30,7 +30,7 @@ from .schemas import ChatIn, ChatOut, OutputIn, ScreenIn, ScreenResult, Verdict
 log = logging.getLogger("guardrail")
 REFUSAL = "Sorry, I can't help with that request. If you need assistance with your account, please contact the bank directly."
 PRESETS = {
-    "groq": ("https://api.groq.com/openai/v1", "GROQ_API_KEY", "llama-3.3-70b-versatile"),
+    "groq": ("https://api.groq.com/openai/v1", "GROQ_API_KEY", "openai/gpt-oss-120b"),
     "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai", "GEMINI_API_KEY", "gemini-2.5-flash"),
     "openrouter": ("https://openrouter.ai/api/v1", "OPENROUTER_API_KEY", "meta-llama/llama-3.3-70b-instruct:free"),
     "ollama": ("http://localhost:11434/v1", "", "llama3.2"),
